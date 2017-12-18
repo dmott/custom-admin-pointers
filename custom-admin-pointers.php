@@ -1,4 +1,11 @@
 <?php
+/**
+* Plugin Name: Custom Admin pointers
+* Author: Dennis Mott
+* Author URI: https://github.com/dmott/custom-admin-pointers
+* Version: 0.0.1
+*/
+
 add_action('admin_enqueue_scripts', 'add_admin_pointers');
 function add_admin_pointers(){
   add_action( 'admin_print_footer_scripts', 'custom_admin_pointers_footer' );
